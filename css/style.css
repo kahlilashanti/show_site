@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+
 body {
   margin: 0;
   padding: 0;
   font-size: 100%;
   line-height: 1.6;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 
 }
+
+
 
 #wrapper {
   position: relative;
@@ -109,3 +113,20 @@ body {
     font-size: 75%;
   }
 }
+
+.nyt {
+  position: relative;
+  margin-top: 35vh;
+}
+
+.sooke {
+  color: #fff;
+}
+
+.basic h1 {
+  font-family: 'Allerta Stencil', sans-serif;
+}
+
+/* .footer {
+  display: block;
+} */

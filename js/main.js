@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
   let wrapper = document.getElementById('wrapper');
   let topLayer = wrapper.querySelector('.top');
   let handle = wrapper.querySelector('.handle');
-  let image = document.getElementById('image');
+  // let body = document.getElementById('body');
   let skew = 0;
   let delta = 0;
 
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
     skew = 1000;
   }
 
-  image.addEventListener('mousemove', function(e){
+  wrapper.addEventListener('mousemove', function(e){
     delta = (e.clientX - window.innerWidth / 2) * 0.5;
 
     handle.style.left = e.clientX + delta + 'px';
