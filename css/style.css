@@ -10,7 +10,6 @@ body {
 }
 
 
-
 #wrapper {
   position: relative;
   width: 100%;
@@ -127,6 +126,109 @@ body {
   font-family: 'Allerta Stencil', sans-serif;
 }
 
-/* .footer {
-  display: block;
 } */
+.image-column{
+  position:absolute;
+  display:block;
+  top:0;
+  z-index:0;
+  bottom:0;
+  width:50%;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:top
+}
+
+/* .section-container{
+  padding:80px 0
+} */
+
+.section-half-background-image-container{
+  position:relative;
+  background-color:#eee;
+  padding:80px 0 100px;
+}
+
+.text-column{
+  /* padding:50px; */
+  /* position:relative; */
+  /* z-index:3; */
+}
+.description, .razor{
+  float: left;
+  width: 50%;
+}
+
+
+/* css for modal*/
+#modalBtn:hover {
+  background:#333
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 10% auto;
+  width: 50%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name: modalopen;
+  animation-duration: 3s;
+}
+
+.modal-header h2, .modal-footer h3 {
+  margin:0;
+}
+
+.modal-header{
+  background: #333;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.modal-body {
+  padding: 10px 20px;
+}
+
+.modal-content img{
+  height: 100%;
+  width: 100%;
+}
+
+.modal-footer {
+  background:#333;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.closeBtn {
+  color: #ccc;
+  float: right;
+  font-size: 15px;
+  /* color: #fff; */
+}
+
+.closeBtn:hover, .closeBtn:focus {
+  color:#000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+@keyframes modalopen {
+  from {opacity: 0}
+  to {opacity:: 3}
+}
